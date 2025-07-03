@@ -20,6 +20,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 	Plug 'ryanoasis/vim-devicons'               " Иконки файлов для NERDTree
 	Plug 'Xuyuanp/nerdtree-git-plugin'          " Git статус в NERDTree
 	
+	" Coc (recommended)
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 	" Визуальные темы и оформление (оставляем только один)
 	Plug 'itchyny/lightline.vim'                " Строка состояния (оставляем)
 	
