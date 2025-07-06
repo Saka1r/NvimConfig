@@ -30,6 +30,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 	" Другие полезные плагины
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
     
+    Plug 'neovim/nvim-lspconfig'
+
 call plug#end()
 "------- fzf config ----- 
 "Ctrl+T, Ctrl+X, или Ctrl+V открыть файл
@@ -42,4 +44,9 @@ let g:floaterm_keymap_toggle = '<F4>' " F4 клавиша открытия те�
 
 "F3 открыть боковую панель с файловым менеджером
 nnoremap <F3> :NERDTreeToggle<CR>
+
+"Lua init
+lua << EOF
+require'lspconfig'.asm_lsp.setup{}
+EOF
 
