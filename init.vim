@@ -6,8 +6,6 @@ else
     runtime plugins.vim
 endif
 
-
-
 " Включаем мышь
 set mouse=a
 
