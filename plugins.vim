@@ -19,10 +19,11 @@ call plug#begin('~/.local/share/nvim/plugged')
 	Plug 'preservim/nerdtree'                   " Файловый менеджер NERDTree
 	Plug 'ryanoasis/vim-devicons'               " Иконки файлов для NERDTree
 	Plug 'Xuyuanp/nerdtree-git-plugin'          " Git статус в NERDTree
-
-	" Визуальные темы и оформление (оставляем только один)
+	 
+    " Визуальные темы и оформление (оставляем только один)
 	Plug 'itchyny/lightline.vim'                " Строка состояния (оставляем)
-	
+	Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+
 	" Другие полезные плагины (по желанию)
 	Plug 'voldikss/vim-floaterm'                " Встроенный терминал
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}

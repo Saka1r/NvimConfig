@@ -4,7 +4,10 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
     silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 else
     runtime plugins.vim
-    
+endif
+
+
+
 " Включаем мышь
 set mouse=a
 
@@ -29,12 +32,6 @@ set softtabstop=4
 " Включаем автоматический отступ
 set autoindent
 
-" Тема
-Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
-
-call plug#end()
-
 " Настройка темы
 colorscheme catppuccin-mocha
 
-endif
