@@ -5,5 +5,7 @@
 <a href="https://ibb.co/8LnTnn6g"><img src="https://i.ibb.co/210m00g3/neovim1.png" alt="neovim1" border="0"></a>
 <a href="https://ibb.co/CpBg03ZC"><img src="https://i.ibb.co/bj1TdMZw/neovim2.png" alt="neovim2" border="0"></a>
 
+<h1>You need node.js and asm-lex</h1>
+
 <h1>For Unix</h1>
 <code>sed -i 's/\r$//' init.vim</code>
