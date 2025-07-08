@@ -6,6 +6,8 @@ else
     runtime plugins.vim
 endif
 
+set termguicolors
+
 " Включаем мышь
 set mouse=a
 

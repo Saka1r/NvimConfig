@@ -22,14 +22,13 @@ call plug#begin('~/.local/share/nvim/plugged')
 	Plug 'airblade/vim-gitgutter'               " Git подсветка
     Plug 'dstein64/nvim-scrollview'             " Scrollbar
     Plug 'voldikss/vim-floaterm'                " Встроенный терминал
-
+    Plug 'romgrk/barbar.nvim'                   " Файлы в отдельные блоки
     " Визуальные темы и оформление (оставляем только один)
 	Plug 'itchyny/lightline.vim'                " Строка состояния (оставляем)
 	Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
 	" Другие полезные плагины
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    
     Plug 'neovim/nvim-lspconfig'
 
 call plug#end()
@@ -47,6 +46,6 @@ nnoremap <F3> :NERDTreeToggle<CR>
 
 "Lua init
 lua << EOF
-require'lspconfig'.asm_lsp.setup{}
+require('lspconfig').asm_lsp.setup{}
 EOF
 
